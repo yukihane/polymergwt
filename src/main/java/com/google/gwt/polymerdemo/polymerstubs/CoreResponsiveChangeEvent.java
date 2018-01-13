@@ -1,8 +1,9 @@
 package com.google.gwt.polymerdemo.polymerstubs;
 
-import com.google.gwt.core.client.js.JsProperty;
-import com.google.gwt.core.client.js.JsType;
 import com.google.gwt.polymerdemo.myelemental.Event;
+
+import jsinterop.annotations.JsProperty;
+import jsinterop.annotations.JsType;
 
 @JsType
 public interface CoreResponsiveChangeEvent extends Event {
