@@ -19,6 +19,8 @@
   <!-- <inherits name='com.google.gwt.user.theme.dark.Dark'/>     -->
 
   <!-- Other module inherits                                      -->
+  <inherits name='elemental2.core.Core'/>
+  <inherits name='elemental2.dom.Dom'/>
 
   <!-- Specify the app entry point class.                         -->
   <entry-point class='com.google.gwt.polymerdemo.entry.PolymerGwtEntryPoint'/>
