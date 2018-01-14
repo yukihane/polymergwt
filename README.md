@@ -1,33 +1,39 @@
 # Maven Polymergwt
 
-Maven fork of https://github.com/cdigiano/polymergwt 
+Maven fork of
+- https://github.com/cristcost/polymergwt
+- https://github.com/cdigiano/polymergwt 
 
 
 ## Instructions:
 
-clone the project change to the project dir
+Clone the project change to the project dir
 
 ```
-git clone https://github.com/cristcost/polymergwt.git
+git clone https://github.com/yukihane/polymergwt.git
+cd polymergwt
 ```
 
-build with maven
+Build with maven
 ```
-mvn clean install
+mvn clean gwt:compile war:exploded
+```
+or simply
+```
+mvn clean package
 ```
 
-run with maven's jetty plugin
+Run with maven's jetty plugin
 
 ```
 mvn jetty:run
 ```
 
-open http://localhost:8888/ with your browser
+Open http://localhost:8888/ with your browser
 
 
-## Notes on GWT version 
+## Notes
 
-This maven version is using GWT 2.8.0-SNAPSHOT
-
-
+- This maven version is using GWT 2.8.2
+- Firefox 57.0.4 works well with this demo, but Chromium 63.0.3239.84 does not
 
