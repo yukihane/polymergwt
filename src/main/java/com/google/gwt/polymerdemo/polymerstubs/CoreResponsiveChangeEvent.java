@@ -5,14 +5,14 @@ import com.google.gwt.polymerdemo.myelemental.Event;
 import jsinterop.annotations.JsProperty;
 import jsinterop.annotations.JsType;
 
-@JsType
+@JsType(isNative=true)
 public interface CoreResponsiveChangeEvent extends Event {
 
   @Override
   @JsProperty
   Detail getDetail();
 
-  @JsType
+  @JsType(isNative=true)
   interface Detail extends Event.Detail {
     // TODO(digi): Fix JsProperty bean parsing to allow this to be renamed isNarrow.
     @JsProperty boolean getNarrow();

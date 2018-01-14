@@ -4,6 +4,6 @@ import com.google.gwt.polymerdemo.myelemental.HTMLElement;
 
 import jsinterop.annotations.JsType;
 
-@JsType
+@JsType(isNative=true)
 public interface CoreIconButton extends HTMLElement {
 }

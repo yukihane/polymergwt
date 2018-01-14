@@ -5,7 +5,7 @@ import com.google.gwt.polymerdemo.myelemental.HTMLElement;
 import jsinterop.annotations.JsProperty;
 import jsinterop.annotations.JsType;
 
-@JsType
+@JsType(isNative=true)
 public interface CoreDrawerPanel extends HTMLElement {
 
   @JsProperty void setForceNarrow(boolean narrow);
