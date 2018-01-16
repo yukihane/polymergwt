@@ -5,7 +5,7 @@ import jsinterop.annotations.JsPackage;
 import jsinterop.annotations.JsProperty;
 import jsinterop.annotations.JsType;
 
-@JsType(isNative=true, namespace=JsPackage.GLOBAL)
+@JsType(isNative=true, namespace=JsPackage.GLOBAL, name="Object")
 public abstract class CoreDrawerPanel extends HTMLElement {
 
   @JsProperty public abstract void setForceNarrow(boolean narrow);
