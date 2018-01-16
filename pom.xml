@@ -61,7 +61,7 @@
 				<configuration>
 					<webApp>
 						<baseResource implementation="org.eclipse.jetty.util.resource.ResourceCollection">
-							<resourcesAsCSV>${webappDirectory}</resourcesAsCSV>
+							<resourcesAsCSV>${basedir}/src/main/webapp,${webappDirectory}</resourcesAsCSV>
 						</baseResource>
 					</webApp>
 					<httpConnector>
