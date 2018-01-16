@@ -1,22 +1,22 @@
 package com.google.gwt.polymerdemo.polymerstubs;
 
-import com.google.gwt.polymerdemo.myelemental.HTMLElement;
-
+import elemental2.dom.HTMLElement;
+import jsinterop.annotations.JsPackage;
 import jsinterop.annotations.JsProperty;
 import jsinterop.annotations.JsType;
 
-@JsType(isNative=true)
-public interface CoreDrawerPanel extends HTMLElement {
+@JsType(isNative=true, namespace=JsPackage.GLOBAL)
+public abstract class CoreDrawerPanel extends HTMLElement {
 
-  @JsProperty void setForceNarrow(boolean narrow);
+  @JsProperty public abstract void setForceNarrow(boolean narrow);
   
   // TODO(digi): Rename to isNarrow() when JsType parsing allows.
-  @JsProperty boolean getNarrow();
+  @JsProperty public abstract boolean getNarrow();
   
-  @JsProperty String getSelected();
-  @JsProperty void setSelected(String selected);
+  @JsProperty public abstract String getSelected();
+  @JsProperty public abstract void setSelected(String selected);
 
-  void closeDrawer();
-  void openDrawer();
-  void togglePanel();
+  public abstract void closeDrawer();
+  public abstract void openDrawer();
+  public abstract void togglePanel();
 }

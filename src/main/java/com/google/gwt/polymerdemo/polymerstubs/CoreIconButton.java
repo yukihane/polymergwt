@@ -1,9 +1,9 @@
 package com.google.gwt.polymerdemo.polymerstubs;
 
-import com.google.gwt.polymerdemo.myelemental.HTMLElement;
-
+import elemental2.dom.HTMLElement;
+import jsinterop.annotations.JsPackage;
 import jsinterop.annotations.JsType;
 
-@JsType(isNative=true)
-public interface CoreIconButton extends HTMLElement {
+@JsType(isNative=true, namespace=JsPackage.GLOBAL)
+public abstract class CoreIconButton extends HTMLElement {
 }
