@@ -90,7 +90,7 @@
 				</executions>
 				<configuration>
 					<jsInteropMode>JS</jsInteropMode>
-					<style>DETAILED</style>
+					<style>PRETTY</style>
 					<hostedWebapp>${webappDirectory}</hostedWebapp>
 					<webappDirectory>${webappDirectory}</webappDirectory>
 				</configuration>
